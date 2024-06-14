@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" href="./assets/images/logo.jpg" type="image/png">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('./assets/images/testi-banner.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 1000px;
+      height: 100vh;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0);
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+    .content {
+      flex-basis: calc(70% - 20px);
+      max-width: calc(70% - 20px);
+      margin-right: 20px;
+      background-color: rgba(231, 187, 187, 0.9);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    .scanner {
+      flex-basis: calc(30% - 20px);
+      max-width: calc(30% - 20px);
+      background-color: rgba(231, 187, 187, 0.9);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    .scanner img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+    .placeholder {
+      display: none;
+    }
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .content, .scanner {
+        flex-basis: calc(100% - 20px);
+        max-width: calc(100% - 20px);
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+    .back-button {
+      background-color: green;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+    .back-button:hover {
+      background-color: darkgreen;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <h1>Support Our Cause</h1>
+      <p>Your generous donations help us rescue and care for stray animals. Together, we can make a difference in their lives.<br>
+        आपके उदार दान से हम भटके हुए जानवरों को बचाने और उनकी देखभाल करने में सहायक होते हैं। हम साथ मिलकर उनके जीवन में अंतर कर सकते हैं।
+    </p>
+      <div class="bank-details">
+        <h3>Bank Information</h3>
+        <p><strong>Bank:</strong> Union Bank of India</p>
+        <p><strong>Account Number:</strong> 396402010064064</p>
+        <p><strong>IFSC:</strong> UBIN0539643</p>
+      </div>
+      <a href="index.html" class="back-button">Click to go back</a>
+    </div>
+    <div class="scanner">
+      <img src="./assets/images/donation.jpg" alt="Donation Scanner">
+    </div>
+  </div>
+</body>
+</html>
